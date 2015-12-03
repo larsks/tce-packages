@@ -1,5 +1,11 @@
 #!/bin/sh
 
+set -e
+
+VERSION=$(cat version)
+
+cd avahi-$VERSION
+
 ./configure --prefix=/usr/local --localstatedir=/var --with-distro=none \
 	--with-avahi-user=tc --with-avahi-group=staff \
 	--with-avahi-priv-access-group=staff --with-autoipd-user=tc \
@@ -24,3 +30,6 @@
 	--disable-doxygen-html \
 	--disable-manpages \
 	--disable-xmltoman
+
+make
+

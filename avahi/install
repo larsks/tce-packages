@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+VERSION=$(cat version)
+PKGROOT=$PWD/root
+
+mkdir -p $PKGROOT
+cd avahi-$VERSION
+
+make install DESTDIR=$PKGROOT
+

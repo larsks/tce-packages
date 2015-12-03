@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+tce-load -w $(cat build-deps)
+tce-load -ic $(cat build-deps)
+
+./fetch-source
+./compile
+./install

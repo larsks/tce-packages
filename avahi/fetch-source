@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+VERSION=$(cat version)
+PACKAGE=avahi-${VERSION}
+
+curl -LO -z $PACKAGE.tar.gz http://avahi.org/download/${PACKAGE}.tar.gz
+tar xf avahi-${VERSION}.tar.gz
+
