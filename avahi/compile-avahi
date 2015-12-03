@@ -1,0 +1,26 @@
+#!/bin/sh
+
+./configure --prefix=/usr/local --localstatedir=/var --with-distro=none \
+	--with-avahi-user=tc --with-avahi-group=staff \
+	--with-avahi-priv-access-group=staff --with-autoipd-user=tc \
+	--with-autoipd-group=staff --enable-compat-libdns_sd \
+	--disable-nls \
+	--disable-glib \
+	--disable-gobject \
+	--disable-qt3 \
+	--disable-qt4 \
+	--disable-gtk \
+	--disable-gtk3 \
+	--disable-dbus \
+	--disable-gdbm \
+	--disable-python \
+	--disable-pygtk \
+	--disable-python-dbus \
+	--disable-mono \
+	--disable-monodoc \
+	--disable-doxygen-doc \
+	--disable-doxygen-dot \
+	--disable-doxygen-xml \
+	--disable-doxygen-html \
+	--disable-manpages \
+	--disable-xmltoman

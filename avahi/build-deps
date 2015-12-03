@@ -1,0 +1,10 @@
+compile-essentials
+gettext
+gettext-locale
+acl acl-dev
+perl_xml_parser
+expat2 expat2-dev
+pkg-config
+glib2-dev
+libdaemon-dev
+intltool
